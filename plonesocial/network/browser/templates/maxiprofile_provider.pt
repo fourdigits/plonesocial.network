@@ -59,21 +59,20 @@
       <form method="post">
         <input type="hidden" name="userid"
                tal:attributes="value view/userid" />
-	<input tal:condition="not:view/is_following"
-	       type="submit" name="subunsub"
-		   i18n:attributes="value"
-	       value="follow" />
-	<span tal:condition="view/is_following"
-	      class="following" i18n:translate="">
-	  Following
-	</span>
-	<input tal:condition="view/is_following"
-	       type="submit" name="subunsub"
-		   i18n:attributes="value"
-	       value="unfollow" />
+        <input tal:condition="not:view/is_following"
+               type="submit" name="subunsub_follow"
+               i18n:attributes="value"
+               value="follow" />
+        <span tal:condition="view/is_following"
+              class="following" i18n:translate="">
+          Following
+        </span>
+        <input tal:condition="view/is_following"
+               type="submit" name="subunsub_unfollow"
+               i18n:attributes="value"
+               value="unfollow" />
       </form>
     </div>
-
 
   </div><!-- /info -->
 
