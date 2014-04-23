@@ -1,9 +1,47 @@
 Changelog
 =========
 
+0.6.1 (2014-03-11)
+------------------
+
+* Reflect changed version in changelog [gyst]
+
+0.6.0 (2014-03-11)
+------------------
+
+* Bind browserviews to INavigationRoot instead of ISiteRoot [gyst]
+
+* Package distribution was fixed by adding classifiers, dependencies and
+  fixing license version number as GPLv2; a MANIFEST.in file was also added.
+  [hvelarde]
+
+* Brazilian Portuguese translation was added.
+  [hvelarde]
+
+* enrich CSS markup [Guido A.J. Stevens]
+
+* bump version [Guido A.J. Stevens]
+
+* make sure only the right subunsub form is processed, fixes #7 [Guido A.J. Stevens]
+
+
+0.5.2 (2013-07-31)
+------------------
+
+* bump version after having pypi release confusion [gyst]
+* update docs [gyst]
+
+0.4.3 (2013-04-29)
+------------------
+
+* Plone 4.3 compatibility [tdesvenain]
+* Dutch translation [maartenkling]
+
 0.4.2 (2012-11-26)
 ------------------
 
+* add Dutch translation [maartenkling]
+* translate follow/unfollow buttons [maartenkling]
 * update changelog, release [gyst]
 * provide a virtualenv-enabled Travis buildout that can be debugged on a dev box [gyst]
 * pep8 fixes [gyst]

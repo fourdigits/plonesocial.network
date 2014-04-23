@@ -6,21 +6,20 @@
        tal:content="structure view/portrait" />
   </div>
 
-  <div class="personal-info">
+  <div class="personal-info" i18n:domain="plonesocial.network">
 
     <h3 class="username">
       <a tal:attributes="href view/profile_url"
-	 tal:content="view/data/fullname">user name</a>
+         tal:content="view/data/fullname">user name</a>
     </h3>
 
     <div class="userid">
       <a tal:attributes="href view/profile_url"
-	 tal:content="string: @${view/userid}">@who</a>
+         tal:content="string: @${view/userid}">@who</a>
     </div>
 
-
     <div class="bio"
-	 tal:content="view/data/description">bio</div>
+         tal:content="view/data/description">bio</div>
     <div>
     </div>
 
@@ -42,8 +41,5 @@
                value="unfollow" />
       </form>
     </div>
-
   </div><!-- /info -->
-
-
 </div><!-- /profile -->

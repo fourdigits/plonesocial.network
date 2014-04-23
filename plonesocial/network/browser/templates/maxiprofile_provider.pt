@@ -10,25 +10,25 @@
 
     <h1 class="username">
       <a tal:attributes="href view/profile_url"
-	 tal:content="view/data/fullname">user name</a>
+         tal:content="view/data/fullname">user name</a>
     </h1>
 
-    <div class="navigation">
+    <div class="plonesocial network navigation">
       <ul>
-        <li>
+        <li class="updates">
           <a tal:attributes="href view/profile_url">
             <span class="count"> </span>
             <span class="option" i18n:translate="">Updates</span>
           </a>
         </li>
-        <li>
+        <li class="followers">
           <a tal:attributes="href view/followers_url">
             <span class="count"
                   tal:content="view/followers_count">21</span>
             <span class="option" i18n:translate="">Followers</span>
           </a>
         </li>
-        <li>
+        <li class="following">
           <a tal:attributes="href view/following_url">
             <span class="count"
                   tal:content="view/following_count">33</span>
@@ -40,19 +40,21 @@
 
     <div class="userid">
       <a tal:attributes="href view/profile_url"
-	 tal:content="string: @${view/userid}">@who</a>
+         tal:content="string: @${view/userid}">@who</a>
     </div>
 
     <div class="bio"
-	 tal:content="view/data/description">bio</div>
+         tal:content="view/data/description">bio
+    </div>
+
     <div>
       <span class="location"
-	    tal:condition="view/data/location"
-	    tal:content="view/data/location">location</span>
+            tal:condition="view/data/location"
+            tal:content="view/data/location">location</span>
       <a class="home_page"
-	 tal:condition="view/data/home_page"
-	 tal:attributes="href view/data/home_page"
-	 tal:content="view/data/home_page">url</a>
+            tal:condition="view/data/home_page"
+            tal:attributes="href view/data/home_page"
+            tal:content="view/data/home_page">url</a>
     </div>
 
     <div class="subunsub" tal:condition="view/show_subunsub">
@@ -73,7 +75,5 @@
                value="unfollow" />
       </form>
     </div>
-
   </div><!-- /info -->
-
 </div><!-- /profile -->
